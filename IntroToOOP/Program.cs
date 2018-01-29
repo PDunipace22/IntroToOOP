@@ -10,6 +10,28 @@ namespace IntroToOOP
     {
         static void Main(string[] args)
         {
+            Cat firstcat = new Cat();
+            firstcat.Name = "Mr. Fuzzy";
+
+            Cat secondCat = new Cat("Midnight", 14, "black");
+
+            Console.WriteLine(firstcat.Name);
+            Console.WriteLine(secondCat.Name);
+
+            firstcat.Eat();
+
+            secondCat.Meow();
+
+            firstcat.HairLength = "nice and short";
+            secondCat.HairLength = "too long";
+            Console.WriteLine(firstcat.Hairball());
+            Console.WriteLine(secondCat.Hairball());
+
+            Dog firstDog = new Dog("short", 25, 30, 25.22);
+            Dog secondDog = new Dog();
+            Console.WriteLine(firstDog.HairLength + ", "+ firstDog.Height + ", " + firstDog.RunningSpeed + ", " + firstDog.Weight);
+            secondDog.Potty();
+            secondDog.Bark();
         }
     }
 }
