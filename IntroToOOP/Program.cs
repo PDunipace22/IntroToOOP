@@ -27,6 +27,8 @@ namespace IntroToOOP
             Console.WriteLine(firstcat.Hairball());
             Console.WriteLine(secondCat.Hairball());
 
+            Cat thirdCat = new Cat(4, true);
+
             Dog firstDog = new Dog("short", 25, 30, 25.22);
             Dog secondDog = new Dog();
             Console.WriteLine(firstDog.HairLength + ", "+ firstDog.Height + ", " + firstDog.RunningSpeed + ", " + firstDog.Weight);

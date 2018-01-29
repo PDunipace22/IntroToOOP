@@ -41,6 +41,11 @@ namespace IntroToOOP
             this.age = age;
             this.furColor = furColor;
         }
+        public Cat(int age, bool isHungry)
+        {
+            this.age = age;
+            this.isHungry = isHungry;
+        }
 
         //methods
         public void Eat()
